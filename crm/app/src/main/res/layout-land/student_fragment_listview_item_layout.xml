@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center"
+    android:id="@+id/fragment_student_rel"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/student_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:textColor="@color/txt_bule"
+        android:text="姓名"/>
+    <TextView
+        android:id="@+id/student_phone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/bianji_text"
+        android:text="电话"/>
+    <TextView
+        android:id="@+id/student_card"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/bianji_text"
+        android:text="卡号"/>
+
+    <TextView
+        android:id="@+id/student_class"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/bianji_text"
+        android:text="班级"/>
+
+    <TextView
+        android:id="@+id/student_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/bianji_text"
+        android:text="联系人"/>
+
+    <TextView
+        android:id="@+id/student_school"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/txt_bule"
+        android:text="学校"/>
+</LinearLayout>

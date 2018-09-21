@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".BluetoothActivity" >
+
+   <TextView
+        android:id="@+id/undevice_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="未绑定设备"
+       android:gravity="center"
+       android:layout_centerHorizontal="true"
+       android:textColor="@color/btn_bule"
+       android:textSize="15sp"
+       />
+
+    <TextView
+        android:layout_below="@+id/undevice_name"
+        android:id="@+id/undevice_address"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="设备地址"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/grey"
+        android:textSize="14sp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">微系统2V</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="msg_sys_net_unavailable">网络不可用，请打开网络</string>
+    <string name="border_top">Border Top</string>
+    <string name="border_bottom">Border Bottom</string>
+    <string name="image_url">Image Url</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal"> </string>
+    <string name="xlistview_footer_hint_ready"> </string>
+</resources>

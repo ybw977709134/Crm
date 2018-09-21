@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/student_boming_title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="5dp"
+        android:background="@mipmap/bg_header">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="报名缴费"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fg_sd_student_detail_rel_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/student_boming_title"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/student_detail_bianji_lyt_01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/student_detail_bianji_rel_01"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/fg_sd_student_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="学员姓名"
+                        android:textColor="@color/bianji_text"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="@color/hongse"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/fg_baoming_student_name_text"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/edt_style_02"
+                    android:gravity="center"
+                    android:hint="学员姓名"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/bianji_text"
+                    android:textColorHint="@color/black_text"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/student_detail_bianji_rel_02"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/fg_sd_student_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:text="学员性别"
+                        android:textColor="@color/bianji_text"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="@color/hongse"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/fg_baoming_student_sex_text"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/edt_style_02"
+                    android:gravity="center"
+                    android:hint="点击选择性别"
+                    android:text=""
+                    android:textColor="@color/bianji_text"
+                    android:textColorHint="@color/black_text"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/student_detail_bianji_rel_03"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/fg_sd_student_class"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:text="报名班级"
+                        android:textColor="@color/bianji_text"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="@color/hongse"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/fg_baoming_student_class_text"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/edt_style_02"
+                    android:gravity="center"
+                    android:hint="选择班级"
+                    android:text=""
+                    android:textColor="@color/bianji_text"
+                    android:textColorHint="@color/black_text"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/student_detail_bianji_rel_04"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/fg_sd_student_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:text="报名时间"
+                    android:textColor="@color/bianji_text"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/fg_add_student_time_text"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/edt_style_02"
+                    android:gravity="center"
+                    android:hint="报名时间"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/bianji_text"
+                    android:textColorHint="@color/black_text"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/student_detail_bianji_rel_05"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/fg_sd_student_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:text="报名总价"
+                    android:textColor="@color/bianji_text"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/fg_add_student_total_text"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/edt_style_02"
+                    android:gravity="center"
+                    android:hint="报名费"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/bianji_text"
+                    android:textColorHint="@color/black_text"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/student_detail_bianji_lyt_02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/student_detail_bianji_rel_06"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/fg_sd_student_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:text="手机号码"
+                        android:textColor="@color/bianji_text"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="@color/hongse"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/fg_add_student_phone_text"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/edt_style_02"
+                    android:gravity="center"
+                    android:hint="手机号"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/bianji_text"
+                    android:textColorHint="@color/black_text"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/student_detail_bianji_rel_07"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/fg_sd_student_contacts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:text="联系人"
+                        android:textColor="@color/bianji_text"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="@color/hongse"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/fg_add_student_contacts_text"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/edt_style_02"
+                    android:gravity="center"
+                    android:hint="联系人"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/bianji_text"
+                    android:textColorHint="@color/black_text"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/student_detail_bianji_rel_08"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/fg_sd_student_Operator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:text="操作人员"
+                    android:textColor="@color/bianji_text"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/fg_add_student_Operator_text"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/edt_style_02"
+                    android:gravity="center"
+                    android:hint="操作人员"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/bianji_text"
+                    android:textColorHint="@color/black_text"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/student_detail_bianji_rel_09"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/fg_sd_student_baoming_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:text="报名编号"
+                    android:textColor="@color/bianji_text"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/fg_add_student_code_text"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/edt_style_02"
+                    android:gravity="center"
+                    android:hint="报名编号"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/bianji_text"
+                    android:textColorHint="@color/black_text"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/student_baoming_rel_011"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/fg_sd_student_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:text="门禁卡号"
+                    android:textColor="@color/bianji_text"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/fg_add_student_card_text"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/edt_style_02"
+                    android:gravity="center"
+                    android:hint="门禁卡号"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/bianji_text"
+                    android:textColorHint="@color/black_text"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/beizhu_rel"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/fg_sd_student_detail_rel_up"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/title_beizhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="缴费备注"
+            android:textColor="@color/bianji_text"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/add_student_beizhu_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@+id/title_beizhu"
+            android:background="@drawable/edt_style_02"
+            android:gravity="top"
+            android:hint="请填写备注信息"
+            android:maxLines="6"
+            android:paddingLeft="30dp"
+            android:paddingTop="30dp"
+            android:text=""
+            android:textColor="@color/bianji_text"
+            android:textColorHint="@color/black_text"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/beizhu_rel">
+
+        <Button
+            android:id="@+id/btn_baoming"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="150dp"
+            android:background="@mipmap/bg_header"
+            android:text="报名"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_chongzhi"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/btn_baoming"
+            android:background="@mipmap/bg_header"
+            android:text="重置"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

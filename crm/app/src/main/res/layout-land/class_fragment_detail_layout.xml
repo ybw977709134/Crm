@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="950dp"
+                android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/activity_student_class_detail_rel"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:background="@mipmap/bg_header">
+
+        <ImageButton
+            android:id="@+id/class_detail_img_return"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/icon_back" />
+
+
+        <TextView
+            android:id="@+id/class_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="英语一班"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/activity_student_class_detail_rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/class_detail_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="学员姓名"
+                android:textColor="@color/bianji_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="日期"
+                android:textColor="@color/bianji_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="课时数"
+                android:textColor="@color/bianji_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="总价"
+                android:textColor="@color/bianji_text"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/class_detail_view_title"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/class_detail_list_title"
+            android:background="@color/bg_Gray" />
+
+        <ListView
+            android:id="@+id/class_detail_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/class_detail_view_title"
+            android:background="@color/white"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            android:dividerHeight="0.5dp"
+            android:divider="@color/bg_Gray"
+            android:cacheColorHint="#00000000"
+           >
+
+        </ListView>
+
+        </RelativeLayout>
+</RelativeLayout>

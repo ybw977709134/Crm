@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="match_parent"
+    tools:context=".BluetoothActivity" >
+
+   <RelativeLayout
+       android:id="@+id/rel_title"
+       android:layout_width="match_parent"
+       android:layout_height="45dp"
+       android:background="@color/btn_bule">
+       <ImageButton
+           android:id="@+id/return_Bluetooth_btn"
+           android:layout_width="50dp"
+           android:layout_height="45dp"
+           android:layout_alignParentTop="true"
+           android:background="@null"
+           android:src="@mipmap/icon_back" />
+
+       <Button
+           android:id="@+id/openBluetooth_tb"
+           android:layout_width="100dp"
+           android:layout_height="45dp"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="5dp"
+           android:background="@null"
+           android:text="打开蓝牙"
+           android:textSize="16sp"
+           android:textColor="@color/white"/>
+
+       <Button
+           android:layout_width="100dp"
+           android:layout_height="45dp"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:textColor="@color/white"
+           android:textSize="16sp"
+           android:background="@null"
+           android:text="搜索设备" />
+   </RelativeLayout>
+
+  <LinearLayout
+      android:id="@+id/mian_rel"
+      android:layout_below="@+id/rel_title"
+      android:layout_width="match_parent"
+      android:layout_height="300dp"
+      android:orientation="horizontal">
+
+      <LinearLayout
+          android:id="@+id/linearLayout1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:orientation="vertical" >
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:text="未配对设备"
+              android:gravity="center"
+              android:textColor="@color/gray"
+              android:textSize="16sp"/>
+          
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"
+              android:background="@color/bg_Black"/>
+
+          <ListView
+              android:id="@+id/unbondDevices"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:dividerHeight="3dp"
+              android:divider="@color/gainsboro"/>
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_below="@+id/view_01"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:orientation="vertical" >
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:text="已配对设备"
+              android:gravity="center"
+              android:textColor="@color/gray"
+              android:textSize="16sp"/>
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"
+              android:background="@color/bg_Black"/>
+
+          <ListView
+              android:id="@+id/bondDevices"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:dividerHeight="10dp"
+              android:divider="@color/gainsboro"
+              >
+          </ListView>
+      </LinearLayout>
+  </LinearLayout>
+
+    <Button
+        android:layout_below="@+id/mian_rel"
+        android:id="@+id/searchDevices"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@color/btn_bule"
+        android:text="搜索设备" />
+
+</RelativeLayout>

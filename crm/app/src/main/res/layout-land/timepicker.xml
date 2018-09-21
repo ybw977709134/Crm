@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/timePicker1"
+    android:layout_width="650dp"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+
+     >
+    <RelativeLayout 
+	    android:layout_width="650dp"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal"
+	    android:background="@color/bg_Black"
+	    >
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+			android:layout_marginLeft="5dp"
+			android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:background="@drawable/edt_style"
+			android:textSize="18sp"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+            android:textColor="@color/white"
+			android:layout_marginRight="5dp"
+            android:background="@drawable/edt_style"
+			android:textSize="18sp"
+            android:text="确定" />
+	</RelativeLayout>
+
+	<LinearLayout 
+	    android:id="@+id/timePicker2"
+	    android:layout_width="650dp"
+	    android:layout_height="fill_parent"
+		android:background="@color/bg_Gray"
+	    android:orientation="horizontal" >
+	     <com.onemeter.wiget.WheelView
+	         android:id="@+id/year"
+	         android:layout_width="match_parent"
+	         android:layout_weight="1"
+	         android:layout_height="wrap_content" />
+	
+	     <com.onemeter.wiget.WheelView
+	         android:id="@+id/month"
+	         android:layout_width="match_parent"
+	         android:layout_weight="1"
+	         android:layout_height="wrap_content" />
+	
+	     <com.onemeter.wiget.WheelView
+	         android:id="@+id/day"
+	         android:layout_width="match_parent"
+	         android:layout_weight="1"
+	         android:layout_height="wrap_content" />
+	     
+	</LinearLayout>
+</LinearLayout>

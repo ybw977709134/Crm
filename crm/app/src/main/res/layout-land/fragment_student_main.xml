@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_01"
+    android:orientation="vertical">
+    <!--标题栏布局-->
+    <RelativeLayout
+        android:id="@+id/student_title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/student_soso_et"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/add_student"
+            android:background="@drawable/ed_biankuang_style"
+            android:paddingLeft="120dp"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/student_btn_sousuo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignRight="@+id/student_soso_et"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_style_02"
+            android:src="@mipmap/icon_search" />
+
+
+        <Button
+            android:id="@+id/change_choose_type_text"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/icon_down"
+            android:paddingRight="10dp"
+            android:text="全部"
+            android:textSize="18sp" />
+
+
+        <ImageButton
+            android:id="@+id/add_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:layout_toLeftOf="@+id/btn_user_logout"
+            android:background="@null"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@mipmap/add" />
+
+
+        <Button
+            android:id="@+id/btn_user_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/icon_down"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="15107156400"
+            android:textSize="18sp"
+            android:textColor="@color/bianji_text"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/student_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/student_title"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="姓名"
+            android:textColor="@color/bianji_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="电话"
+            android:textColor="@color/bianji_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="卡号"
+            android:textColor="@color/bianji_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="年级"
+            android:textColor="@color/bianji_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="联系人"
+            android:textColor="@color/bianji_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="学校"
+            android:textColor="@color/bianji_text"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/student_view_title"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/student_list_title"
+        android:background="@color/bg_Gray" />
+
+    <com.onemeter.view.XListView
+        android:id="@+id/student_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/student_view_title"
+        android:background="@color/white"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:dividerHeight="0.5dp"
+        android:divider="@color/bg_Gray"
+        android:cacheColorHint="#00000000"
+        >
+
+    </com.onemeter.view.XListView>
+
+
+</RelativeLayout>

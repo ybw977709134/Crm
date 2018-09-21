@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="950dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/activity_student_detail_rel"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:background="@mipmap/bg_header">
+
+        <ImageButton
+            android:id="@+id/img_return"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/icon_back" />
+
+
+      <TextView
+          android:id="@+id/fragment_student_detail_username"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="小明"
+          android:textSize="25sp"
+          android:textColor="@color/white"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="30dp"
+          android:layout_marginLeft="30dp"
+          />
+
+
+        <Button
+            android:id="@+id/btn_change_model"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginRight="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:layout_marginBottom="11dp"
+            android:drawableRight="@mipmap/icon_down"
+            android:paddingRight="10dp"
+            android:text="学员详情"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/dayin_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:visibility="gone"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="打印设置"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_student_detail_rel">
+        <FrameLayout
+            android:id="@+id/change_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+        </FrameLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:background="@mipmap/tooltip_bg_search"
+    >
+
+<Button
+    android:id="@+id/btn_student_detail_view"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="学员详情"
+    android:textSize="18sp"
+    android:textColor="@color/white"
+    android:background="@null"
+    android:layout_marginTop="20dp"
+    />
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/white"/>
+    <Button
+        android:id="@+id/btn_hetong_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="合同"
+        android:background="@null"
+        />
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/white"/>
+    <Button
+        android:id="@+id/btn_dongtai_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="联系动态"
+        android:background="@null"
+        />
+</LinearLayout>

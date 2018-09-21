@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:gravity="center"
+
+              android:orientation="horizontal">
+    <TextView
+        android:id="@+id/class_fragment_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:textColor="@color/txt_bule"
+        android:text="班级名称"/>
+    <TextView
+        android:id="@+id/class_fragment_startdata"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/bianji_text"
+        android:text="开始日期"/>
+    <TextView
+        android:id="@+id/class_fragment_type"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/bianji_text"
+        android:text="班级类型"/>
+
+    <TextView
+        android:id="@+id/class_fragment_biaoming_num"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/bianji_text"
+        android:text="已报人数"/>
+
+    <TextView
+        android:id="@+id/class_fragment_total"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/bianji_text"
+        android:text="最大人数"/>
+
+    <TextView
+        android:id="@+id/class_fragment_stuts"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/txt_bule"
+        android:text="班级状态"/>
+</LinearLayout>

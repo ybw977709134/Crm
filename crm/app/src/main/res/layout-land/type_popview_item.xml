@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="200dp"
+              android:orientation="vertical"
+              android:background="@mipmap/bg_left_tip">
+
+    <Button
+        android:id="@+id/btn_type_all"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="全部"
+        android:background="@null"
+        android:layout_marginTop="20dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/white"/>
+    <Button
+        android:id="@+id/btn_type_no_baoming"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="未报名"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:background="@null"
+       />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/white"/>
+    <Button
+        android:id="@+id/btn_type_yes_baoming"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="已报名"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+       />
+
+
+</LinearLayout>

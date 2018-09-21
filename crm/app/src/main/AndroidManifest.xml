@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.onemeter"
+    android:versionCode="3"
+    android:versionName="3.0"
+    >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="22" />
+
+    <!-- 访问网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- 管理蓝牙设备的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.onemeter.app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/vlogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.testActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity
+            android:name=".activity.StudentDetailActivity"
+            android:theme="@style/Theme.Dialog"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.AddStudentActivity"
+            android:theme="@style/Theme.Dialog"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.ClassDetailActivity"
+            android:theme="@style/Theme.Dialog"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.CoursePicDetailActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Transparent"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.ImageDetailsActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Transparent"
+            android:launchMode="singleTask"/>
+
+        <activity
+            android:name=".activity.ImagePagerActivity"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTask"/>
+        <activity
+            android:theme="@style/Theme.Dialog"
+            android:name=".activity.BluetoothActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:launchMode="singleTask"
+           />
+
+        <activity
+            android:name="com.onemeter.activity.PrintPreviewActivity"
+            android:theme="@style/Theme.Dialog"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity
+            android:name="com.onemeter.activity.PrintDataActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:launchMode="singleTask"
+            />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border"
+    android:padding="3dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/course_view_rel"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/course_item_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img3" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/course_item_mainrel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/course_view_rel"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/course_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="英语一班"
+            android:textColor="@color/bg_Black"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:id="@+id/course_item_text_rel"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/course_item_title"
+            android:layout_height="60dp">
+            <TextView
+                android:id="@+id/course_item_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text=""
+                android:textColor="@color/bianji_text"
+                android:textSize="17sp" />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/course_item_text_rel"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/course_item_price"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:text="¥ 200"
+                android:textColor="@color/green"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/course_item_class_hours"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:paddingRight="20dp"
+                android:text="20课时"
+                android:textColor="@color/bianji_text"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
